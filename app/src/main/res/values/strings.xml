@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">App_Equis</string>
+    <string name="btn_text">Tarea2</string>
+    <string name="monto">Introduzca un monto</string>
+    <string name="dollar_placeholder">Billetes de 100: \n Billetes de 50: \n Billetes de 20:</string>
+    <string name="cent_placeholder">Monedas de 10: \n Monedas de 5:</string>
+    <string name="clear">Borrar \n &lt;---------------</string>
+    <string name="exit">Salir \n ---------------&gt;</string>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/main_container">
+
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/parent_container">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/background_gradient">
+
+            <TextView
+                android:id="@+id/btn_white"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/btn_darker_white"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/darker_white" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/light_grey"
+                android:id="@+id/btn_light_grey"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/dark_grey"
+                android:id="@+id/btn_dark_grey"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/black"
+                android:id="@+id/btn_black"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/content">
+
+            <ImageView
+                android:id="@+id/logo_itla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_itla"
+                android:layout_marginStart="20dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/monto"
+                android:hint="@string/monto"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo_itla"
+                android:layout_alignEnd="@+id/logo_itla"
+                android:text="@string/dollar_placeholder"
+                android:id="@+id/dollars"
+                android:visibility="invisible"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/monto"
+                android:layout_alignStart="@+id/monto"
+                android:text="@string/cent_placeholder"
+                android:visibility="invisible"
+                android:id="@+id/cents"
+                android:layout_marginTop="15dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:id="@+id/swipe_zone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:id="@+id/exit"
+                android:text="@string/exit"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/clear"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
